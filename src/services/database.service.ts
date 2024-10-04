@@ -1,12 +1,12 @@
-import sqlite3 from 'sqlite3';
-import {Database, open} from 'sqlite';
+import sqlite3 from "sqlite3";
+import { Database, open } from "sqlite";
 
 import path from "path";
 
 async function initialize() {
   const db = await open({
-    filename: path.join(__dirname,'../data/weather.db'),
-    driver: sqlite3.Database
+    filename: path.join(__dirname, "../data/weather.db"),
+    driver: sqlite3.Database,
   });
 
   await db.exec(`
@@ -23,9 +23,9 @@ async function initialize() {
 
 async function openDB(): Promise<Database> {
   return await open({
-    filename: path.join(__dirname,'../data/weather.db'),
-    driver: sqlite3.Database
+    filename: path.join(__dirname, "../data/weather.db"),
+    driver: sqlite3.Database,
   });
 }
 
-export {initialize, openDB};
+export { initialize, openDB };
