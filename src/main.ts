@@ -5,6 +5,7 @@ import { deleteWeatherData, getAllWeatherData, saveWeatherData } from "./service
 import { exportWeatherDataToCSV } from "./services/file.service";
 import logger from "./utils/logger";
 
+//async function to handle the main logic of the application
 async function main() {
   while (true) {
     const { action } = await inquirer.prompt({
