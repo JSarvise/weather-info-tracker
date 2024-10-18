@@ -1,6 +1,4 @@
-import logger from "../utils/logger";
 import { WeatherData } from "../models/weather.model";
-import { Database } from "sqlite";
 import { openDB } from "./database.service";
 
 async function saveWeatherData(data: WeatherData): Promise<void> {
@@ -27,7 +25,6 @@ async function getAllWeatherData(): Promise<WeatherData[]> {
       city: row.city,
       temperature: row.temperature,
       humidity: row.humidity,
-      description: "", // Assuming the 'description' field is not saved in the database
       timestamp: row.timestamp,
     }));
   } catch (error) {

@@ -1,9 +1,16 @@
 import fs from "fs";
+import path from "path";
 import { openDB } from "./database.service";
 
 async function exportWeatherDataToCSV(): Promise<void> {
   const db = await openDB();
-  const filePath = "./data/weather_data.csv";
+  const filePath = path.join(__dirname, "../data/weather_data.csv");
+  const directoryPath = path.dirname(filePath);
+
+  // Ensure the 'data' directory exists
+  if (!fs.existsSync(directoryPath)) {
+    fs.mkdirSync(directoryPath, { recursive: true });
+  }
 
   try {
     const data = await db.all(`SELECT * FROM weather`);

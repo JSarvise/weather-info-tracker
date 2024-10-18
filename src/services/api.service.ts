@@ -18,7 +18,6 @@ async function getWeather(city: string): Promise<WeatherData> {
     const weatherData: WeatherData = {
       city: data.name,
       temperature: data.main.temp,
-      description: data.weather[0].description,
       humidity: data.main.humidity,
       timestamp: new Date().toISOString(),
     };

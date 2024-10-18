@@ -1,7 +1,6 @@
 {
   "name": "weather-info-tracker",
   "version": "1.0.0",
-  "description": "A Node.js app to track weather data, save it to a database, and export it to files.",
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
