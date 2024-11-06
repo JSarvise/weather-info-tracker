@@ -38,9 +38,6 @@ Usage
     Enter a location to fetch current weather or forecast information.
     Save preferred locations for easy future access.
 
-Contributing
-
-Contributions are welcome! Feel free to submit pull requests or open issues to improve this project.
 License
 
 This project is licensed under the MIT License.
