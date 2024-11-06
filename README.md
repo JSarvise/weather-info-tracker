@@ -29,8 +29,6 @@ Run the Application:
 
     npm run start
 
-        Note: The API key is stored in api.service.ts, under the API_KEY constant.
-
 🛠️ Usage
 
 Upon starting the application, you'll be presented with a menu of options in the terminal:
