@@ -40,7 +40,3 @@ Upon starting the application, you'll be presented with a menu of options in the
     Exit — Close the application.
 
 Use the arrow keys to navigate through the options, and press Enter to select an action.
-
-📜 License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
