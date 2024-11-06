@@ -1,18 +1,18 @@
-Weather Info Tracker
+🌦️ Weather Info Tracker
 
-A simple weather information tracking application that allows users to view and store weather data for different locations. This project provides essential weather insights, such as temperature, humidity, and forecast, by utilizing a weather API.
-Features
+Weather Info Tracker is a sleek, easy-to-use weather application that fetches and displays real-time weather information, allowing users to track weather conditions for their favorite locations. Powered by the OpenWeatherMap API, this app provides essential weather insights, including temperature and humidity.
+✨ Features
 
-    Current Weather: Displays real-time weather information for specified locations.
-    Weather Forecast: Provides short-term weather predictions for chosen areas.
-    Location Management: Users can save favorite locations for quick access.
-    Data Storage: Stores weather data locally for easy retrieval.
+    🌍 Current Weather — Get up-to-the-minute weather data for any city worldwide.
+    📅 Customizable Locations — Save and revisit weather information for multiple locations with ease.
+    📊 Detailed Metrics — View essential metrics such as temperature, humidity or timestamp.
+    🕒 Real-Time Data — Weather data is refreshed on every request, ensuring accuracy.
 
-Getting Started
+🚀 Quick Start Guide
 Prerequisites
 
-    Node.js: Ensure you have Node.js installed (https://nodejs.org/)
-    API Key: Sign up for an API key from a weather provider (e.g., OpenWeatherMap) to access weather data.
+    Node.js: Ensure Node.js is installed on your machine.
+    Weather API Key: The project uses OpenWeatherMap’s API (no setup required as the key is already configured in api.service.ts).
 
 Installation
 
@@ -25,19 +25,24 @@ Install Dependencies:
 
 npm install
 
-Configure Environment Variables:
-
-    Rename .env.example to .env and add your weather API key.
-
 Run the Application:
 
-    npm start
+    npm run start
 
-Usage
+        Note: The API key is stored in api.service.ts, under the API_KEY constant.
 
-    Enter a location to fetch current weather or forecast information.
-    Save preferred locations for easy future access.
+🛠️ Usage
 
-License
+Upon starting the application, you'll be presented with a menu of options in the terminal:
 
-This project is licensed under the MIT License.
+    Fetch Current Weather — Retrieve the latest weather data for a specified city.
+    View Saved Weather Data — Access previously saved weather information.
+    Export Weather Data to CSV — Export saved weather data into a CSV file for easy sharing and analysis.
+    Delete Weather Record — Remove a specific weather record from the saved data.
+    Exit — Close the application.
+
+Use the arrow keys to navigate through the options, and press Enter to select an action.
+
+📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
